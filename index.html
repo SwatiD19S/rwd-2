@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <div id="main">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styling.css"/>
+    <h1 id="title">Up for the BE trip?</h1>
+    <h3 id="description">Tell us what you feel about the trip!</h3>
+    <form id="survey-form">
+       <label for="name">Name</label><br>
+       <input id="name" type="text" placeholder="John Doe"><br><br>
+       <label for="email">Email</label><br>
+       <input id="email" type="email" placeholder="example@here.com"><br><br>
+       <label for="number">Preferred group size</label><br>
+       <input type="number" id="number" min="3" max="20" value="Number" placeholder="10"><br><br>
+       <label for="dropdown">Which mode of transport do you prefer for the trip?</label><br>
+       <select name="mode" id="dropdown">
+       	 <option value="Two-wheeler">Bike/Scooter</option>
+       	 <option value="Bus">Bus</option>
+       	 <option value="Scorpio">Scorpio(Zyaada paisa hai toh idhar dedo☺)</option>
+       </select>
+       <p>Where to?</p>
+       <input type="radio" name="place" value="Goa">Goa<br>
+       <input type="radio" name="place" value="Kerala">Kerala<br>
+       <input type="radio" name="place" value="Uttarakhand">Uttarakhand<br>
+       <input type="radio" name="place" value="Pudducherry">Pudducherry<br>
+       <p>According to you, we must take care of which of the following things before heading out?</p>
+       <input type="checkbox" value="Budget" checked>Budget<br>
+       <input type="checkbox" value="Planning">Planning<br>
+       <input type="checkbox" value="Forming the group">Forming the group<br>
+       <input type="checkbox" value="Packing">Packing the right clothes<br>
+       <p>Anything else that you would like to share with us(any suggestions for the trip)?</p>
+       <textarea rows="6" cols="60">May be we could......</textarea><br>
+       <button type="submit" value="Submit">Submit</button>
+    </form>
+  </div>
+</html>
